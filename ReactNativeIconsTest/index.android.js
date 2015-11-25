@@ -39,28 +39,28 @@ var ReactNativeIconsTest = React.createClass({
   name='zocial|github'
   size={70}
   color='black'
-  style={styles.github}
+  style={styles.beer}
 />
 <Icon
   name='fontawesome|facebook-square'
   size={70}
   color='#3b5998'
-  style={styles.facebook}
+  style={styles.beer}
 />
 <Icon
   name='foundation|lightbulb'
   size={30}
   color='#777777'
-  style={styles.lightbulb}
+  style={styles.beer}
 />
 
 <Icon
   name='material|face'
   size={30}
   color='#333333'
-  style={styles.face}
+  style={styles.beer}
 />
-      </View>
+     </View>
     );
   }
 });
