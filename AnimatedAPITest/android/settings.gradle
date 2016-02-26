@@ -1,0 +1,3 @@
+rootProject.name = 'AnimatedAPITest'
+
+include ':app'
