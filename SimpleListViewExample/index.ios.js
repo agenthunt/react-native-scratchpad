@@ -10,12 +10,12 @@ import React, {
   Text,
   View
 } from 'react-native';
-
+import SimpleListView from './SimpleListView';
 class SimpleListViewExample extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.topShadow}/>
+        <SimpleListView/>
       </View>
     );
   }
@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'stretch',
     backgroundColor: '#F5FCFF',
   },
   welcome: {
@@ -37,19 +37,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,
-  },
-  topShadow: {
-    width:200,
-    height:200,
-    backgroundColor: 'white',
-    shadowColo: "#000000",
-    shadowOpacity: 0.5,
-    shadowRadius: 2,
-    borderBottomColor: 'white',
-    shadowOffset: {
-      height: -5,
-      width: 0
-    }
   }
 });
 
