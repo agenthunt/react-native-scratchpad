@@ -44,5 +44,27 @@
     <key>NSAllowsArbitraryLoads</key>
     <true/>
   </dict>
+  <!--facebook integration -->
+  <key>CFBundleURLTypes</key>
+  <array>
+    <dict>
+      <key>CFBundleURLSchemes</key>
+      <array>
+        <string>fb1610678932556903</string>
+      </array>
+    </dict>
+  </array>
+  <key>FacebookAppID</key>
+  <string>1610678932556903</string>
+  <key>FacebookDisplayName</key>
+  <string>test seven</string>
+  <key>LSApplicationQueriesSchemes</key>
+  <array>
+    <string>fbapi</string>
+    <string>fb-messenger-api</string>
+    <string>fbauth2</string>
+    <string>fbshareextension</string>
+  </array>
+  <!--facebook integration -->
 </dict>
 </plist>

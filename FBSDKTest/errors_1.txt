@@ -1,0 +1,37 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.3.sdk -L/Users/shailesh/work/repos/react-native-scratchpad/FBSDKTest/ios/build/Build/Products/Debug-iphonesimulator -F/Users/shailesh/work/repos/react-native-scratchpad/FBSDKTest/ios/build/Build/Products/Debug-iphonesimulator -filelist /Users/shailesh/work/repos/react-native-scratchpad/FBSDKTest/ios/build/Build/Intermediates/FBSDKTest.build/Debug-iphonesimulator/FBSDKTest.build/Objects-normal/x86_64/FBSDKTest.LinkFileList -Xlinker -rpath -Xlinker @executable_path/Frameworks -mios-simulator-version-min=7.0 -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -ObjC -lc++ -fobjc-arc -fobjc-link-runtime /Users/shailesh/work/repos/react-native-scratchpad/FBSDKTest/ios/build/Build/Products/Debug-iphonesimulator/libReact.a /Users/shailesh/work/repos/react-native-scratchpad/FBSDKTest/ios/build/Build/Products/Debug-iphonesimulator/libRCTActionSheet.a /Users/shailesh/work/repos/react-native-scratchpad/FBSDKTest/ios/build/Build/Products/Debug-iphonesimulator/libRCTGeolocation.a /Users/shailesh/work/repos/react-native-scratchpad/FBSDKTest/ios/build/Build/Products/Debug-iphonesimulator/libRCTImage.a /Users/shailesh/work/repos/react-native-scratchpad/FBSDKTest/ios/build/Build/Products/Debug-iphonesimulator/libRCTLinking.a /Users/shailesh/work/repos/react-native-scratchpad/FBSDKTest/ios/build/Build/Products/Debug-iphonesimulator/libRCTNetwork.a /Users/shailesh/work/repos/react-native-scratchpad/FBSDKTest/ios/build/Build/Products/Debug-iphonesimulator/libRCTSettings.a /Users/shailesh/work/repos/react-native-scratchpad/FBSDKTest/ios/build/Build/Products/Debug-iphonesimulator/libRCTText.a /Users/shailesh/work/repos/react-native-scratchpad/FBSDKTest/ios/build/Build/Products/Debug-iphonesimulator/libRCTVibration.a /Users/shailesh/work/repos/react-native-scratchpad/FBSDKTest/ios/build/Build/Products/Debug-iphonesimulator/libRCTWebSocket.a -lRCTFBSDK -Xlinker -dependency_info -Xlinker /Users/shailesh/work/repos/react-native-scratchpad/FBSDKTest/ios/build/Build/Intermediates/FBSDKTest.build/Debug-iphonesimulator/FBSDKTest.build/Objects-normal/x86_64/FBSDKTest_dependency_info.dat -o /Users/shailesh/work/repos/react-native-scratchpad/FBSDKTest/ios/build/Build/Products/Debug-iphonesimulator/FBSDKTest.app/FBSDKTest
+ld: framework not found FBSDKLoginKit for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+** BUILD FAILED **
+
+
+The following commands produced analyzer issues:
+Analyze Modules/RCTUIManager.m
+(1 command with analyzer issues)
+
+The following build commands failed:
+Ld build/Build/Products/Debug-iphonesimulator/FBSDKTest.app/FBSDKTest normal x86_64
+(1 failure)
+Installing build/Build/Products/Debug-iphonesimulator/FBSDKTest.app
+An error was encountered processing the command (domain=NSPOSIXErrorDomain, code=22):
+Failed to install the requested application
+The bundle identifier of the application could not be determined.
+Ensure that the application's Info.plist contains a value for CFBundleIdentifier.
+Print: Entry, ":CFBundleIdentifier", Does Not Exist
+/Users/shailesh/work/repos/react-native-scratchpad/FBSDKTest/node_modules/promise/lib/done.js:10
+  throw err;
+  ^
+
+Error: Command failed: /usr/libexec/PlistBuddy -c Print:CFBundleIdentifier build/Build/Products/Debug-iphonesimulator/FBSDKTest.app/Info.plist
+Print: Entry, ":CFBundleIdentifier", Does Not Exist
+
+at checkExecSyncError (child_process.js:469:13)
+at Object.execFileSync (child_process.js:489:13)
+at _runIOS (runIOS.js:91:34)
+at runIOS.js:24:5
+at tryCallTwo (/Users/shailesh/work/repos/react-native-scratchpad/FBSDKTest/node_modules/promise/lib/core.js:45:5)
+at doResolve (/Users/shailesh/work/repos/react-native-scratchpad/FBSDKTest/node_modules/promise/lib/core.js:200:13)
+at new Promise (/Users/shailesh/work/repos/react-native-scratchpad/FBSDKTest/node_modules/promise/lib/core.js:66:3)
+at Array.runIOS (runIOS.js:23:10)
+at Object.run (/Users/shailesh/work/repos/react-native-scratchpad/FBSDKTest/node_modules/react-native/local-cli/cli.js:87:13)
+at Object.<anonymous> (/Users/shailesh/.nvm/versions/node/v5.10.1/lib/node_modules/react-native-cli/index.js:88:7)
